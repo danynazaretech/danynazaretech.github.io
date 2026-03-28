@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Assistiview Project | Tecnologia Acessível para Todos</title>
+    <meta name="description" content="Assistiview Project: Tecnologia assistiva para navegação intuitiva em smartphones para pessoas cegas.">
+
+    <!-- Bulma CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="project/css/style.css">
+</head>
+
+<body>
+
+    <!-- Link de salto para acessibilidade -->
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+
+    <!-- Barra de Navegação (Navbar) -->
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="Navegação principal">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="#" aria-label="Página inicial do Assistiview">
+                    <strong>Assistiview Project</strong>
+                </a>
+
+                <!-- Botão Hamburger para Mobile -->
+                <button class="navbar-burger" aria-label="Abrir menu de navegação" aria-expanded="false" data-target="navbarMenu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </button>
+            </div>
+
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item" href="#sobre">Sobre o projeto</a>
+                    <a class="navbar-item" href="#project">Projetos</a>
+                    <a class="navbar-item" href="#como-funciona">Como Funciona</a>
+                    <a class="navbar-item" href="#acessibilidade">Acessibilidade</a>
+                    <a class="navbar-item" href="#download">
+                        Baixar App <span class="icon"><i class="fab fa-google-play"></i></span></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header style="margin-top: 3.25rem;">
+        <section class="hero is-assistiview">
+            <div class="hero-body">
+                <div class="container">
+                    <div class="columns is-vcentered">
+                        <div class="column is-7">
+                           
+                            <p  aria-live="polite" class="subtitle is-4 mt-4 has-text-left">
+O AssistiView Project está alinhado às diretrizes do WCAG 2.1 AA, integrando tecnologia assistiva a dispositivos móveis   para oferecer mais autonomia e acessibilidade a portadores de deficiência visual ou baixa visão.
+                            </p>
+                               
+                            
+                        </div>
+                        <div class="column is-5 is-hidden-mobile">
+                            <div class="has-text-centered">
+                                <i class="fas fa-mobile-alt fa-10x" aria-hidden="true" style="opacity: 0.2;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main id="main-content">
+        <!-- Seção Sobre -->
+        <section id="sobre" class="section py-6">
+            <div class="container">
+                <div class="columns is-vcentered">
+                    <div class="column is-7">
+                        <h1 class="title is-2 section-title">Sobre o Assistiview Project</h1>
+                        <p class="is-size-5 mb-4">
+                            O <strong>Assistiview</strong> é uma iniciativa dedicada à inclusão digital tecnológica móvel para pessoas com deficiência visual.
+                        </p>
+                        <p class="is-size-5">
+                            Nossas soluções permite adaptar interfaces de aplicativos móveis 
+                             através de um sistema inovador de <strong>gestos simplificados, feedback vibratório
+                                 e auxílio por voz</strong>.
+                        </p>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!--Sessão Projetos-->
+        <section id="project" class="section has-background-light py-6">
+            <div class="container">
+                <h1 class="title is-2 section-title has-text-centered-mobile">Projetos</h1>
+                <div class="columns is-multiline mt-5">
+                    <div class="column is-7">
+                        <div class="card-feature has-background-white">
+                            <h3 class="title is-4">ContactView</h3>
+                            <p>Aplicativo de agenda acessível, com finalidade de oferecer 
+                                acesso a agenda de contatos do celular com as principais
+                                funcionalidades de exclusão, edição e adição de um contato.
+                            </p>
+                           <div class="content">
+                              
+                               <span> Acesso a <a href="termos_politicas_contactview.html">Termos de Uso</a> & 
+                                <a href="termos_politicas_contactview.html">Política de Privacidade</a> do ContactView.</span>
+                           </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Como Funciona -->
+        <section id="como-funciona" class="section  py-6">
+            <div class="container">
+                <h1 class="title is-2 section-title has-text-centered-mobile">Como funciona</h1>
+                <div class="columns is-multiline mt-2">
+                    <div class="column is-4">
+                        <div class="card-feature has-background-white">
+                            <div class="icon-box">
+                                <i class="fas fa-microphone" aria-hidden="true"></i>
+                            </div>
+                            <h3 class="title is-4">TalkBack Nativo</h3>
+                            <p>Integração direta e compatibilidade com o serviço de acessibilidade TalkBack do dispositivos móveis Android. Ações customizadas através de uma lógica de navegação dinâmico por gestos.</p>
+                        </div>
+                    </div>
+                    <div class="column is-4">
+                        <div class="card-feature has-background-white">
+                            <div class="icon-box">
+                               <i class="fas fa-hand-pointer" aria-hidden="true"></i>
+                            </div>
+                            <h3 class="title is-4">Navegação dinâmica</h3>
+                            <p>Defina a ordem de foco, grupos lógicos e hierarquias de navegação de forma programática. Usuários cegos navegam sua UI de forma fluida e previsível.</p>
+                        </div>
+                    </div>
+                    <div class="column is-4">
+                        <div class="card-feature has-background-white">
+                            <div class="icon-box">
+                                 <i class="fas fa-universal-access" aria-hidden="true"></i>
+                                
+                            </div>
+                            <h3 class="title is-4">WCAG 2.1 AA</h3>
+                            <p>Componentes e helpers que garantem conformidade com as diretrizes internacionais de acessibilidade web e mobile. Auditoria integrada em modo debug.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Demonstração -->
+        <section id="acessibilidade" class="section has-background-light py-6">
+            <div class="container">
+                <div class="columns is-vcentered">
+                    <div class="column is-6">
+                        <h1 class="title is-2 section-title">Tecnologia Assistiva</h1>
+                        <p class="is-size-5 mb-5">
+                            A melhor forma de entender o Assistiview é ouvindo como ele interage com o usuário. Ouça abaixo uma demonstração da nossa interface sonora.
+                        </p>
+                        <div class="audio-player-container">
+                            <label for="audio-demo" class="has-text-weight-bold">Ouça a demonstração de navegação:</label>
+                            <audio id="audio-demo" controls>
+                                <source src="project/audio/audio_screen.mp3" type="audio/mpeg">
+                                Seu navegador não suporta a reprodução de áudio.
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="column is-5 is-offset-1">
+                        <h2 class="title is-4">Recursos de Acessibilidade</h2>
+                        <ul class="list-accessible">
+                            <li>
+                                <i class="fas fa-check-circle" aria-hidden="true"></i>
+                                <span><strong>Feedback Háptico:</strong> Vibrações distintas para cada tipo de ação.</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle" aria-hidden="true"></i>
+                                <span><strong>Leitura de Tela:</strong> Compatibilidade total com TalkBack e outros leitores.</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle" aria-hidden="true"></i>
+                                <span><strong>Gestos simples e direcionais:</strong> Movimentos simples direcionais para explorar a tela.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Download -->
+        <section id="download" class="section py-6" style="background-color: var(--primary-blue); color: white;">
+            <div class="container has-text-centered">
+                <h1 class="title is-2 mb-5" style="color: white;">A Oportunidade para começar a usar o App ContactView</h1>
+                <h2 class="is-size-4 mb-6" style="color: rgba(255,255,255,0.9);">
+                    O primeiro aplicativo do projeto ContactView já está disponível na Play Store. 
+                    Faça Download através do link abaixo.
+                </h2>
+                <a class="button is-assistiview is-large" href="#" aria-label="Baixar aplicativo Assistiview na Google Play Store">
+                    <span class="icon"><i class="fab fa-google-play"></i></span>
+                    <span>Download na Play Store</span>
+                </a>
+            
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-4">
+                    <h3 class="footer-logo">Assistiview Project</h3>
+                    <blockquote>
+                    <p><i>"A verdadeira  tecnologia  assistiva que garante  a inclusão das
+                         pessoas com deficiência é aquela advinda de atitudes, das ações, de
+                          recursos e de metodologias."</i></p>
+                          <footer><cite><b>Thiago Fernando de Queiroz </b></cite></footer>
+                    </blockquote>
+                </div>
+                <div class="column is-4 is-offset-1">
+                    <h3 class="title is-5">Links Rápidos</h3>
+                    <ul>
+                        <li><a href="#sobre" class="is-link">Sobre o Projeto</a></li>
+                        <li><a href="#project" class="is-link">Projetos</a></li>
+                        <li><a href="#como-funciona" class="is-linkk">Como Funciona</a></li>
+                        <li><a href="#acessibilidade" class="is-link">Acessibilidade</a></li>
+                        <li><a href="#download" class="is-link  ">Download</a></li>
+                    </ul>
+                </div>
+                <div class="column is-3">
+                    <h3 class="title is-5">Contato</h3>
+
+                       
+                 <a class="is-link" aria-label="E mail"> daninazareceo@gmail.com</a>
+
+                </div>
+            </div>
+            <hr style="background-color: #e2e8f0; height: 1px;">
+            <div class="content has-text-centered is-size-7">
+                <p>© 2026 AssistiView Project. Created by <strong>Dany Nazaré</strong>.  
+               All rights reserved.   <a href="termos_politicas_site.html#termos_uso">Termos de Uso</a> &
+         <a href="termos_politicas_site.html#politica_privacidade">Política de Privacidade</a> do Site.
+            </p>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script para o Menu Mobile -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+            if ($navbarBurgers.length > 0) {
+                $navbarBurgers.forEach( el => {
+                    el.addEventListener('click', () => {
+                        const target = el.dataset.target;
+                        const $target = document.getElementById(target);
+                        el.classList.toggle('is-active');
+                        $target.classList.toggle('is-active');
+                    });
+                });
+            }
+        });
+    </script>
+
+</body>
+
+</html>

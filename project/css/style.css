@@ -1,0 +1,227 @@
+
+        :root {
+            --primary-blue: #0a4fa3;
+            --secondary-blue: #1f7ae0;
+            --light-blue: #eef6fc;
+            --dark-blue: #073a78;
+            --focus-color: #ffdd57;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-size: 1.125rem;
+            line-height: 1.6;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        /* Acessibilidade: Skip Link */
+        .skip-link {
+            position: absolute;
+            top: -100px;
+            left: 0;
+            background: var(--focus-color);
+            color: #000;
+            padding: 1rem;
+            z-index: 9999;
+            transition: top 0.3s;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .skip-link:focus {
+            top: 0;
+            outline: 3px solid #000;
+        }
+
+        /* Foco Visível para Navegação por Teclado */
+        :focus {
+            outline: 3px solid var(--focus-color) !important;
+            outline-offset: 2px;
+        }
+
+        /* Navbar Customizada */
+        .navbar {
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+            padding: 0.15rem 0;
+        }
+
+        .navbar-item {
+            font-weight: 600;
+            color: #4a4a4a;
+            transition: color 0.2s;
+        }
+
+        .navbar-item:hover, .navbar-item.is-active {
+            color: var(--primary-blue) !important;
+            background-color: transparent !important;
+        }
+
+        .navbar-brand strong {
+            color: var(--primary-blue);
+            font-weight: 800;
+            font-size: 1.5rem;
+        }
+
+        /* Estilização Assistiview */
+        .hero.is-assistiview {
+            background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+            color: white;
+            padding: 5rem 0;
+        }
+
+        .hero.is-assistiview .title {
+            color: white;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+        }
+
+        .hero.is-assistiview .subtitle {
+            color: rgba(255, 255, 255, 0.9);
+            max-width: 700px;
+        }
+
+        .button.is-assistiview {
+            background-color: white;
+            color: var(--primary-blue);
+            font-weight: 700;
+            border: none;
+            transition: transform 0.2s, box-shadow 0.2s;
+            height: 3.5rem;
+            padding: 0 2rem;
+        }
+
+        .button.is-assistiview:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            background-color: var(--light-blue);
+            color: var(--dark-blue);
+        }
+
+        .button.is-assistiview-nav {
+            background-color: var(--primary-blue);
+            color: white;
+            font-weight: 700;
+            border-radius: 8px;
+        }
+
+        .button.is-assistiview-nav:hover {
+            background-color: var(--dark-blue);
+            color: white;
+        }
+
+        .button.is-assistiview-outline {
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+            font-weight: 700;
+            height: 3.5rem;
+            padding: 0 2rem;
+        }
+
+        .button.is-assistiview-outline:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+        }
+
+        .section-title {
+            position: relative;
+            padding-bottom: 15px;
+            margin-bottom: 2rem !important;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background-color: var(--secondary-blue);
+            border-radius: 2px;
+        }
+
+        .card-feature {
+            height: 100%;
+            border-radius: 12px;
+            border: 1px solid #eee;
+            transition: all 0.3s ease;
+            padding: 2rem;
+        }
+
+        .card-feature:hover {
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            border-color: var(--secondary-blue);
+        }
+
+        .icon-box {
+            width: 64px;
+            height: 64px;
+            background-color: var(--light-blue);
+            color: var(--primary-blue);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .audio-player-container {
+            background: var(--light-blue);
+            padding: 2rem;
+            border-radius: 16px;
+            border-left: 6px solid var(--primary-blue);
+        }
+
+        audio {
+            width: 100%;
+            margin-top: 1rem;
+        }
+
+        .footer {
+            background-color: #f8fafc;
+            padding: 4rem 1.5rem;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .footer-logo {
+            color: var(--primary-blue);
+            font-weight: 800;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .list-accessible li {
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .list-accessible i {
+            margin-right: 1rem;
+            margin-top: 0.25rem;
+            color: var(--secondary-blue);
+        }
+
+        @media (max-width: 1023px) {
+            .navbar-menu {
+                padding: 1rem;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero.is-assistiview {
+                text-align: center;
+                padding: 3rem 0;
+            }
+            .section-title::after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            .buttons {
+                justify-content: center;
+            }
+        }
